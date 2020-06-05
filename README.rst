@@ -1,5 +1,6 @@
-YAAAS: Yet Another Albeit Atypical Speedtest (CLI)
-##################################################
+####################################################
+ YAAAS: Yet Another Albeit Atypical Speedtest (CLI)
+####################################################
 
 This containerized version of the well-known
 command-line based internet speed test
@@ -9,6 +10,13 @@ minimal requirements needed, initializing
 PID 1 through dumb-init and runs
 as a non-root user.
 
+============
+Requirements
+============
+
+- `Docker <https://docs.docker.com/get-docker/>`_
+
+===============
 Build the image
 ===============
 
@@ -16,6 +24,7 @@ Build the image
 
     $ docker build -t your/speedtest .
 
+=====
 Usage
 =====
 
@@ -33,5 +42,3 @@ Read the usage description for more:
 .. code-block:: bash
 
     $ docker run -it --rm --cap-drop ALL your/speedtest --help
-
-
