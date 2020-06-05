@@ -2,6 +2,6 @@
 .gitignore
 ./dev
 README.md
-CHANGELOG.md
+CHANGELOG.rst
 dev/instance/
 
