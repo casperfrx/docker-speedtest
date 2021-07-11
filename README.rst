@@ -7,7 +7,7 @@ command-line based internet speed test
 has only the notable difference that it runs
 on the scratch base image with the
 minimal requirements needed, initializing
-PID 1 through dumb-init and runs
+PID 1 through and runs
 as a non-root user.
 
 ============
@@ -32,7 +32,7 @@ Simply run:
 
 .. code-block:: bash
 
-    $ docker run -it --rm --cap-drop ALL your/speedtest
+    $ docker run -it --rm --cap-drop ALL --init your/speedtest
 
 The flags `--accept-license` and `--accept-gdrp` are part of the
 CMD block, allowing you to, well, deny them if you do so wish.
@@ -41,4 +41,4 @@ Read the usage description for more:
 
 .. code-block:: bash
 
-    $ docker run -it --rm --cap-drop ALL your/speedtest --help
+    $ docker run -it --rm --cap-drop ALL --init your/speedtest --help
