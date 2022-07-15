@@ -5,7 +5,7 @@ RUN apk add -U --no-cache \
         curl \
         ca-certificates \
 &&  curl -sSL \
-        https://install.speedtest.net/app/cli/ookla-speedtest-1.0.0-x86_64-linux.tgz \
+        https://install.speedtest.net/app/cli/ookla-speedtest-1.1.1-linux-x86_64.tgz \
     | tar -zx -C /opt speedtest \
 &&  chmod +x /opt/speedtest
 &&  echo "$RUN_USER:x:65534:65534:$RUN_USER:/:/sbin/nologin" > /opt/passwd
